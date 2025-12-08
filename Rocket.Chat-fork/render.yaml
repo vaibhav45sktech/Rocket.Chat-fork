@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Rocket.Chat-fork
+    env: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 3000
+    root: .
